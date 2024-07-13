@@ -37,9 +37,23 @@ export function generatePalette(HEXColor: THEXColor): TThemePalette {
     ...getColorShades(rgbToHsl(hexToRgb(secondaryColor))),
   }
 
+  const neutralColor = rgbToHex(
+    hslToRgb({
+      ...hslColor,
+      s: 0,
+    })
+  )
+
+  const neutralPalette = {
+    main: neutralColor,
+    contrast: getContrastHEXColor(neutralColor),
+    ...getColorShades(rgbToHsl(hexToRgb(neutralColor))),
+  }
+
   return {
     primary: primaryPalette,
     secondary: secondaryPalette,
+    neutral: neutralPalette,
   }
 }
 
