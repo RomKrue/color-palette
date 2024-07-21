@@ -3,7 +3,7 @@ import './App.css'
 import {
   generatePalette,
   getContrastHEXColor,
-} from './utils/theme/utils/generateThemePalette'
+} from './utils/theme/generateThemePalette'
 import { THEXColor, TThemePalette } from './utils/theme/types/theme.types'
 import { HexColorPicker } from 'react-colorful'
 

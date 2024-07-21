@@ -4,7 +4,7 @@ import {
   THSLColor,
   TRGBColor,
   TThemePalette,
-} from '../types/theme.types'
+} from './types/theme.types'
 
 export function getContrastHEXColor(HEXColor: THEXColor): THEXColor {
   const hslColor = rgbToHsl(hexToRgb(HEXColor))
