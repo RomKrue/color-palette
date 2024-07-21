@@ -2,7 +2,7 @@
   "name": "color-palette-generator",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://RomKrue.github.io/color-palette",
+  "homepage": "https://romkrue.github.io/color-palette",
   "type": "module",
   "scripts": {
     "dev": "vite",
